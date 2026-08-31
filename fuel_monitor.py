@@ -1,6 +1,7 @@
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -98,6 +99,14 @@ def station_snapshot(station):
         "availableFuel": station.get("availableFuel", {}),
     }
 
+def format_updated_at(value):
+    if not value:
+        return "—"
+
+    dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    dt = dt.astimezone(ZoneInfo("Europe/Moscow"))
+
+    return dt.strftime("%d.%m.%Y %H:%M:%S")
 
 def station_text(station):
     fuel = station.get("availableFuel", {})
@@ -105,7 +114,7 @@ def station_text(station):
     text = (
         f"⛽ {station.get('name', 'АЗС')}\n"
         f"📍 {station.get('address', '')}\n"
-        f"🕒 Обновлено: {station.get('updatedAt', '')}\n\n"
+        f"🕒 Обновлено: {format_updated_at(station.get('updatedAt'))}\n\n"
         f"АИ-92: {fuel_status(fuel.get('92'))}\n"
         f"АИ-95: {fuel_status(fuel.get('95'))}\n"
         f"АИ-100: {fuel_status(fuel.get('100'))}\n"
