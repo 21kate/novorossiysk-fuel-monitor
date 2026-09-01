@@ -1,3 +1,4 @@
+```python
 import json
 import os
 from datetime import datetime
@@ -27,13 +28,29 @@ def send_telegram(text, strong=False):
         timeout=30,
     )
 
+    print("Telegram HTTP status:", response.status_code)
+    print("Telegram response:", response.text)
+
     response.raise_for_status()
+
+    data = response.json()
+
+    if not data.get("ok"):
+        raise RuntimeError(f"Telegram API error: {data}")
+
+    print("Telegram message sent successfully")
 
 
 def get_stations():
     response = requests.get(API_URL, timeout=30)
     response.raise_for_status()
-    return response.json()["data"]
+
+    data = response.json()
+
+    print("Stations API HTTP status:", response.status_code)
+    print(f"Stations received: {len(data.get('data', []))}")
+
+    return data["data"]
 
 
 def load_state():
@@ -46,7 +63,12 @@ def load_state():
 
 def save_state(state):
     with open(STATE_FILE, "w", encoding="utf-8") as file:
-        json.dump(state, file, ensure_ascii=False, indent=2)
+        json.dump(
+            state,
+            file,
+            ensure_ascii=False,
+            indent=2,
+        )
 
 
 def fuel_status(fuel):
@@ -99,6 +121,7 @@ def station_snapshot(station):
         "availableFuel": station.get("availableFuel", {}),
     }
 
+
 def format_updated_at(value):
     if not value:
         return "—"
@@ -107,6 +130,7 @@ def format_updated_at(value):
     dt = dt.astimezone(ZoneInfo("Europe/Moscow"))
 
     return dt.strftime("%d.%m.%Y %H:%M:%S")
+
 
 def station_text(station):
     fuel = station.get("availableFuel", {})
@@ -174,8 +198,12 @@ def changes_text(old, new):
 
 
 def main():
+    print("=== Fuel Monitor started ===")
+
     stations = get_stations()
     old_state = load_state()
+
+    print(f"Previous state stations: {len(old_state)}")
 
     new_state = {}
     normal_changes = []
@@ -187,7 +215,8 @@ def main():
 
         new_state[station_id] = current
 
-        # Первый запуск — просто сохраняем состояние.
+        # Первый запуск — просто формируем состояние.
+        # Уведомления по новым станциям не отправляем.
         if station_id not in old_state:
             continue
 
@@ -199,27 +228,42 @@ def main():
         changes = changes_text(previous, current)
 
         # Проверяем появление АИ-95 для всех.
-        old_95 = {
-            "available": is_95_for_everyone({
+        old_95 = is_95_for_everyone(
+            {
                 "availableFuel": previous.get("availableFuel", {}),
                 "detail": previous.get("detail"),
-            })
-        }
+            }
+        )
 
         new_95 = is_95_for_everyone(station)
 
-        if new_95 and not old_95["available"]:
+        if new_95 and not old_95:
             priority_changes.append(station)
         else:
-            normal_changes.append((station, changes))
+            # Если изменения есть, но changes пустой,
+            # всё равно не отправляем пустое сообщение.
+            if changes:
+                normal_changes.append((station, changes))
 
-    save_state(new_state)
+    print(f"Priority changes: {len(priority_changes)}")
+    print(f"Normal changes: {len(normal_changes)}")
+
+    # ============================================================
+    # ВАЖНО:
+    # Сначала отправляем сообщения.
+    # Состояние сохраняем только после успешной отправки.
+    # ============================================================
 
     # 🚨 Самый важный тип уведомления.
     for station in priority_changes:
         message = (
             "🚨🚨🚨 АИ-95 ПОЯВИЛСЯ ДЛЯ ВСЕХ 🚨🚨🚨\n\n"
             + station_text(station)
+        )
+
+        print(
+            f"Sending priority Telegram notification: "
+            f"{station.get('name', 'АЗС')}"
         )
 
         send_telegram(message, strong=True)
@@ -238,8 +282,22 @@ def main():
                 + "━━━━━━━━━━━━━━\n"
             )
 
+        print("Sending normal Telegram notification")
+
         send_telegram("\n".join(message_parts))
+
+    # ============================================================
+    # Сохраняем состояние ТОЛЬКО после успешной отправки Telegram.
+    # Если Telegram упал — выполнение завершится раньше этой строки,
+    # и старое состояние останется.
+    # ============================================================
+
+    save_state(new_state)
+
+    print("State saved successfully")
+    print("=== Fuel Monitor finished successfully ===")
 
 
 if __name__ == "__main__":
     main()
+```
