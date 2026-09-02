@@ -90,6 +90,14 @@ def normalize_detail(detail):
 
 
 def is_95_for_everyone(station):
+    """
+    Проверяет, доступен ли АИ-95 обычным клиентам.
+
+    Считаем 95 доступным для всех, если:
+    - available = true
+    - в комментарии нет признаков ограниченной продажи.
+    """
+
     fuel95 = station.get("availableFuel", {}).get("95", {})
 
     if not fuel95.get("available"):
@@ -97,15 +105,24 @@ def is_95_for_everyone(station):
 
     detail = normalize_detail(station.get("detail"))
 
-    restricted_words = [
+    restricted_phrases = [
         "только по топливным картам",
+        "по топливным картам",
         "только для спец",
+        "для спецтранспорта",
+        "для спец транспорта",
         "спецтранспорт",
+        "спец транспорт",
         "только спец",
+        "только для юридических лиц",
+        "только для юрлиц",
+        "только для юрид. лиц",
+        "только для организаций",
+        "служебный транспорт",
     ]
 
-    for word in restricted_words:
-        if word in detail:
+    for phrase in restricted_phrases:
+        if phrase in detail:
             return False
 
     return True
@@ -122,13 +139,27 @@ def station_snapshot(station):
 
 
 def format_updated_at(value):
+    """
+    API возвращает время в UTC.
+    Показываем пользователю московское время.
+    """
+
     if not value:
         return "—"
 
-    dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
-    dt = dt.astimezone(ZoneInfo("Europe/Moscow"))
+    try:
+        dt = datetime.fromisoformat(
+            value.replace("Z", "+00:00")
+        )
 
-    return dt.strftime("%d.%m.%Y %H:%M:%S")
+        dt = dt.astimezone(
+            ZoneInfo("Europe/Moscow")
+        )
+
+        return dt.strftime("%d.%m.%Y %H:%M:%S")
+
+    except Exception:
+        return value
 
 
 def station_text(station):
@@ -137,7 +168,8 @@ def station_text(station):
     text = (
         f"⛽ {station.get('name', 'АЗС')}\n"
         f"📍 {station.get('address', '')}\n"
-        f"🕒 Обновлено: {format_updated_at(station.get('updatedAt'))}\n\n"
+        f"🕒 Обновлено: "
+        f"{format_updated_at(station.get('updatedAt'))}\n\n"
         f"АИ-92: {fuel_status(fuel.get('92'))}\n"
         f"АИ-95: {fuel_status(fuel.get('95'))}\n"
         f"АИ-100: {fuel_status(fuel.get('100'))}\n"
@@ -163,7 +195,8 @@ def changes_text(old, new):
 
     if old.get("queueCars") != new.get("queueCars"):
         changes.append(
-            f"🚗 очередь: {old.get('queueCars')} → {new.get('queueCars')}"
+            f"🚗 очередь: "
+            f"{old.get('queueCars')} → {new.get('queueCars')}"
         )
 
     old_fuel = old.get("availableFuel", {})
@@ -182,16 +215,27 @@ def changes_text(old, new):
         if old_value != new_value:
             changes.append(
                 f"⛽ {title}: "
-                f"{fuel_status(old_value)} → {fuel_status(new_value)}"
+                f"{fuel_status(old_value)} → "
+                f"{fuel_status(new_value)}"
             )
 
     if old.get("status") != new.get("status"):
         changes.append(
-            f"📌 статус: {old.get('status')} → {new.get('status')}"
+            f"📌 статус: "
+            f"{old.get('status')} → {new.get('status')}"
         )
 
     if old.get("detail") != new.get("detail"):
-        changes.append("📝 изменился комментарий АЗС")
+        changes.append(
+            "📝 изменился комментарий АЗС"
+        )
+
+    if old.get("updatedAt") != new.get("updatedAt"):
+        changes.append(
+            f"🕒 обновлено: "
+            f"{format_updated_at(old.get('updatedAt'))} → "
+            f"{format_updated_at(new.get('updatedAt'))}"
+        )
 
     return changes
 
@@ -202,76 +246,126 @@ def main():
     stations = get_stations()
     old_state = load_state()
 
-    print(f"Previous state stations: {len(old_state)}")
+    print(
+        f"Previous state stations: "
+        f"{len(old_state)}"
+    )
 
     new_state = {}
+
     normal_changes = []
     priority_changes = []
 
     for station in stations:
         station_id = str(station["id"])
+        station_name = station.get("name", "АЗС")
+
+        print(
+            f"Checking station: "
+            f"{station_name} (ID {station_id})"
+        )
+
         current = station_snapshot(station)
 
         new_state[station_id] = current
 
-        # Первый запуск — просто формируем состояние.
-        # Уведомления по новым станциям не отправляем.
+        # Первый запуск:
+        # только сохраняем начальное состояние.
         if station_id not in old_state:
+            print(
+                f"  First run for station: "
+                f"{station_name}"
+            )
             continue
 
         previous = old_state[station_id]
 
         if previous == current:
+            print("  No changes")
             continue
 
-        changes = changes_text(previous, current)
+        print(
+            f"  CHANGE DETECTED: "
+            f"{station_name}"
+        )
 
-        # Проверяем появление АИ-95 для всех.
+        changes = changes_text(
+            previous,
+            current,
+        )
+
+        # Проверяем АИ-95.
         old_95 = is_95_for_everyone(
             {
-                "availableFuel": previous.get("availableFuel", {}),
+                "availableFuel": previous.get(
+                    "availableFuel", {}
+                ),
                 "detail": previous.get("detail"),
             }
         )
 
         new_95 = is_95_for_everyone(station)
 
+        print(
+            f"  AI-95 for everyone: "
+            f"{old_95} → {new_95}"
+        )
+
         if new_95 and not old_95:
+            print(
+                f"  🚨 PRIORITY: AI-95 appeared "
+                f"for everyone at {station_name}"
+            )
+
             priority_changes.append(station)
-        else:
-            # Если изменения есть, но changes пустой,
-            # всё равно не отправляем пустое сообщение.
-            if changes:
-                normal_changes.append((station, changes))
 
-    print(f"Priority changes: {len(priority_changes)}")
-    print(f"Normal changes: {len(normal_changes)}")
+        elif changes:
+            normal_changes.append(
+                (station, changes)
+            )
+
+    print(
+        f"Priority changes: "
+        f"{len(priority_changes)}"
+    )
+
+    print(
+        f"Normal changes: "
+        f"{len(normal_changes)}"
+    )
 
     # ============================================================
-    # ВАЖНО:
-    # Сначала отправляем сообщения.
-    # Состояние сохраняем только после успешной отправки.
+    # Сначала отправляем уведомления.
+    # Состояние сохраняем после успешной отправки.
     # ============================================================
 
-    # 🚨 Самый важный тип уведомления.
+    # 🚨 АИ-95 появился для всех.
     for station in priority_changes:
+
         message = (
             "🚨🚨🚨 АИ-95 ПОЯВИЛСЯ ДЛЯ ВСЕХ 🚨🚨🚨\n\n"
             + station_text(station)
         )
 
         print(
-            f"Sending priority Telegram notification: "
+            "Sending PRIORITY Telegram notification: "
             f"{station.get('name', 'АЗС')}"
         )
 
-        send_telegram(message, strong=True)
+        send_telegram(
+            message,
+            strong=True,
+        )
 
-    # Обычные изменения.
+    # 🔔 Обычные изменения.
     if normal_changes:
-        message_parts = ["🔔 ОБНОВЛЕНИЯ НА АЗС\n"]
+
+        message_parts = [
+            "🔔 ОБНОВЛЕНИЯ НА АЗС\n"
+        ]
 
         for station, changes in normal_changes:
+
             message_parts.append(
                 station_text(station)
                 + "\n\n"
@@ -281,14 +375,23 @@ def main():
                 + "━━━━━━━━━━━━━━\n"
             )
 
-        print("Sending normal Telegram notification")
+        print(
+            "Sending NORMAL Telegram notification"
+        )
 
-        send_telegram("\n".join(message_parts))
+        send_telegram(
+            "\n".join(message_parts)
+        )
+
+    # Если изменений нет — это нормально.
+    if not priority_changes and not normal_changes:
+        print(
+            "No changes detected. "
+            "Telegram notification is not required."
+        )
 
     # ============================================================
-    # Сохраняем состояние ТОЛЬКО после успешной отправки Telegram.
-    # Если Telegram упал — выполнение завершится раньше этой строки,
-    # и старое состояние останется.
+    # Сохраняем состояние.
     # ============================================================
 
     save_state(new_state)
