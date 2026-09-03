@@ -280,18 +280,18 @@
     }
   },
   "5": {
-    "updatedAt": "2026-09-03T07:14:23.000Z",
-    "status": "enough_fuel",
-    "queueCars": 170,
-    "detail": "95 в наличии\nОтпуск бензина всем, остаток 30 машин\n\n1.2 колонка инвалиды",
+    "updatedAt": "2026-09-03T07:40:15.000Z",
+    "status": "closed",
+    "queueCars": null,
+    "detail": null,
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": true,
-        "price": 73.01
+        "available": false,
+        "price": null
       },
       "100": {
         "available": false,
