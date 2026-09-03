@@ -1,0 +1,954 @@
+{
+  "26": {
+    "updatedAt": "2026-09-03T07:03:29.000Z",
+    "status": "enough_fuel",
+    "queueCars": 80,
+    "detail": "Идет слив, будет 92, 95, хватит до 23:00",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "12": {
+    "updatedAt": "2026-08-31T09:24:42.000Z",
+    "status": "enough_fuel",
+    "queueCars": 40,
+    "detail": "АИ 95 - нет в наличии\nАИ 92 - 105 рублей\nДТ - нет в наличии\nтоплива хватит на 31.08.2026, поставки не известны\nОчередь: 40 автомобилей",
+    "availableFuel": {
+      "92": {
+        "available": true,
+        "price": 105
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": false,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "48": {
+    "updatedAt": "2026-08-30T11:30:55.000Z",
+    "status": "closed",
+    "queueCars": 0,
+    "detail": null,
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": false,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "38": {
+    "updatedAt": "2026-09-03T05:03:25.000Z",
+    "status": "enough_fuel",
+    "queueCars": 10,
+    "detail": "На  08:00\nТопливо:\nАи-95 - нет    и сегодня не будет\nАт-92 -65,55    \nДт- по цене 76.70\nНаличный/безналичный расчёт. \nОчередь -10 машин.\nТех перерыв до 8:30",
+    "availableFuel": {
+      "92": {
+        "available": true,
+        "price": 65.55
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 76.7
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "39": {
+    "updatedAt": "2026-08-15T11:52:34.000Z",
+    "status": "closed",
+    "queueCars": null,
+    "detail": "АЗС \"Газпромнефть\" посёлок Верхнебаканский, А-146, 139 километр, 1\nАЗС закрыта",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": false,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "20": {
+    "updatedAt": "2026-09-03T07:01:45.000Z",
+    "status": "enough_fuel",
+    "queueCars": 0,
+    "detail": "АЗС Газпром , сухумское шоссе - \nДТ- в наличии бегзина нет",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "25": {
+    "updatedAt": "2026-08-30T06:49:06.000Z",
+    "status": "enough_fuel",
+    "queueCars": 0,
+    "detail": "Информация на 09:00\nАЗС \"Газпромнефть\" с.Гайдук, на выезд из города \n\nАИ 95G - нет в наличии \nАИ 95 - нет в наличии\nАИ 92 - нет в наличии \nДТ - в наличии, по стоимости 95,00 рублей",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 95
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "27": {
+    "updatedAt": "2026-08-30T06:49:44.000Z",
+    "status": "enough_fuel",
+    "queueCars": null,
+    "detail": "Информация на 09:00\nАЗС \"Газпромнефть\" с.Гайдук, на въезд в город, ул.Золотая рыбка, 24\n\nАИ 95G - нет в наличии \nАИ 95 - нет в наличии\nАИ 92 - нет в наличии \nДТ - в наличии, по стоимости 95,00 рублей",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 95
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "45": {
+    "updatedAt": "2026-08-13T14:52:21.000Z",
+    "status": "closed",
+    "queueCars": null,
+    "detail": "ЗАКРЫТО!",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": false,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "4": {
+    "updatedAt": "2026-09-03T07:07:28.000Z",
+    "status": "enough_fuel",
+    "queueCars": 120,
+    "detail": "АЗС Лукойл сухумское шоссе - \nДТ- в наличии АИ 95",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": true,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "5": {
+    "updatedAt": "2026-09-03T07:14:23.000Z",
+    "status": "enough_fuel",
+    "queueCars": 170,
+    "detail": "95 в наличии\nОтпуск бензина всем, остаток 30 машин\n\n1.2 колонка инвалиды",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": true,
+        "price": 73.01
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": false,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "6": {
+    "updatedAt": "2026-09-03T04:45:58.000Z",
+    "status": "enough_fuel",
+    "queueCars": 40,
+    "detail": "На 07:00\nАИ-95- нет\nАИ-92- нет\nДТ- 78,36",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 78.36
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "7": {
+    "updatedAt": "2026-09-02T10:59:24.000Z",
+    "status": "enough_fuel",
+    "queueCars": 150,
+    "detail": "Лукойл, Ленина , 2 \nбензин закончился, только дт и топливные карты 1 колонка",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 78.36
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "8": {
+    "updatedAt": "2026-09-02T11:28:42.000Z",
+    "status": "enough_fuel",
+    "queueCars": 70,
+    "detail": "АЗС Лукойл Пр. Дзержинского 211/1\n\nАи 92 только по топливным картам\nАи 95 есть для всех\nДт есть для всех",
+    "availableFuel": {
+      "92": {
+        "available": true,
+        "price": null
+      },
+      "95": {
+        "available": true,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 78.36
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "11": {
+    "updatedAt": "2026-09-03T07:02:14.000Z",
+    "status": "enough_fuel",
+    "queueCars": 120,
+    "detail": "АЗС ЛУКОЙЛ Глебовское\n\nДТ-78.36\n\nотпуск топлива с 12:00",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "31": {
+    "updatedAt": "2026-09-03T06:56:31.000Z",
+    "status": "closed",
+    "queueCars": null,
+    "detail": "АЗС Лукойл тер. п.Верхнебаканский, Трасса А146, 39 км\n\nТопливо:\nАи-100 по цене 0, отсутствует.\nАи-95 по цене 74,58, отсутствует.\nАи-92 по цене 67,53, отсутствует.\nДТ по цене 78,22, отсутствует. \n\nОстаток не дают.\n\nЗаправка закрыта.",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": false,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "35": {
+    "updatedAt": "2026-09-02T10:34:24.000Z",
+    "status": "enough_fuel",
+    "queueCars": null,
+    "detail": "АЗС Лукойл ст.Раевская\n\nТопливо: \nАи-92 нет в наличии \nАи-95 нет в наличии               АИ-100  нет в наличии \nДТ-  в наличии     78,36              \nОчереди нет \nКазачество нет\nЛимит бензина 40л.         Лимит ДТ 60л.  Отпуск топлива всем.",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 78.36
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "46": {
+    "updatedAt": "2026-09-03T07:06:51.000Z",
+    "status": "enough_fuel",
+    "queueCars": 80,
+    "detail": "Лукойл Цемдолина 171 \nБензин будет 04.09.2026 с 06:00\nдизель  78,36 в наличии",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 78.36
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "13": {
+    "updatedAt": "2026-08-21T13:44:21.000Z",
+    "status": "closed",
+    "queueCars": 0,
+    "detail": "АЗС \"Петрол\", Сухумское шоссе, 7 - ЗАКРЫТА!!!!",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": false,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "3": {
+    "updatedAt": "2026-09-03T07:09:53.000Z",
+    "status": "enough_fuel",
+    "queueCars": 60,
+    "detail": "На 8.00    \nАИ-92  66,05 в наличии достаточно\nАИ -95 в наличии на 40 машин\nДТ достаточно.",
+    "availableFuel": {
+      "92": {
+        "available": true,
+        "price": 66.05
+      },
+      "95": {
+        "available": true,
+        "price": 72.2
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 77.2
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "17": {
+    "updatedAt": "2026-09-03T07:11:41.000Z",
+    "status": "enough_fuel",
+    "queueCars": 40,
+    "detail": "92-есть, 95 есть, ориентировочно до 10:30, ДТ - есть, по топливным картам все топливо.\nЗаправка только для спец.транспорта и по топливным картам",
+    "availableFuel": {
+      "92": {
+        "available": true,
+        "price": null
+      },
+      "95": {
+        "available": true,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 76.55
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "19": {
+    "updatedAt": "2026-08-15T09:36:40.000Z",
+    "status": "closed",
+    "queueCars": null,
+    "detail": "АЗС закрыта до сентября, по техническим причинам!",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": false,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "29": {
+    "updatedAt": "2026-09-02T10:32:31.000Z",
+    "status": "enough_fuel",
+    "queueCars": 0,
+    "detail": "АЗС Роснефть тер. п.Верхнебаканский,\n\nТопливо:\nАи-92 по цене 66,05 - нет,\nАи-95 по цене 72,20 - нет,\nДТ по цене 77,20 в наличии, остаток не дают.\n\nОчередь порядка 0 машин.\n\nОплата: банковские карты, топливные карты, наличный расчет.\n\nЛимит:\nПо топливным картам 50л.\nФизическим лицам 30л.\nДт- 200л.",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 77.2
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "36": {
+    "updatedAt": "2026-09-03T07:14:05.000Z",
+    "status": "enough_fuel",
+    "queueCars": 0,
+    "detail": "Сливается бензовоз, работает с 12:00 Дт-77,20 в доступе для всех.\n95- есть, отпускают только  по топливным картам,                   \n92 - есть, отпускают только по топливным картам\nПо карте вездеход АИ 92",
+    "availableFuel": {
+      "92": {
+        "available": true,
+        "price": null
+      },
+      "95": {
+        "available": true,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 77.2
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "40": {
+    "updatedAt": "2026-09-03T07:15:08.000Z",
+    "status": "enough_fuel",
+    "queueCars": 120,
+    "detail": "Идет слив топлива, заправка закрыта",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 77.2
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "47": {
+    "updatedAt": "2026-09-03T06:56:44.000Z",
+    "status": "enough_fuel",
+    "queueCars": 8,
+    "detail": "АЗС ТатНефть тер. п.Верхнебаканский, Трасса х. Горный\n\nТопливо:\nАи-95 по цене 72,29 нет,\nАи-92 по цене 66,19 нет,\nДТ Евро 5 по цене 77,09 нет ,\nДТ Евро 6 по цене 78,59 нет.\n\nОчередь порядка 0 машин\n\nЛимит: Бензин легковые - 30 л.\n ДТ легковые - 60 л.\n ДТ грузовые - 200 л.",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": true,
+        "price": null
+      }
+    }
+  },
+  "15": {
+    "updatedAt": "2026-09-02T10:43:41.000Z",
+    "status": "enough_fuel",
+    "queueCars": 0,
+    "detail": "ул. ​Малоземельская\nДТ - 80,00\nДТ евро - 85,00",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 80
+      },
+      "DT_PLUS": {
+        "available": true,
+        "price": 85
+      }
+    }
+  },
+  "16": {
+    "updatedAt": "2026-09-02T10:44:20.000Z",
+    "status": "enough_fuel",
+    "queueCars": 0,
+    "detail": "Суворовская, 81\nДТ. Отпуск топлива спецтранспорту",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 80
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "21": {
+    "updatedAt": "2026-09-02T10:44:02.000Z",
+    "status": "enough_fuel",
+    "queueCars": null,
+    "detail": "пр. Дзержинского, 227\nДТ - 80,00",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 80
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "22": {
+    "updatedAt": "2026-09-02T10:44:35.000Z",
+    "status": "enough_fuel",
+    "queueCars": 0,
+    "detail": "Кирилловка\nТолько ДТ",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 84.99
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "23": {
+    "updatedAt": "2026-09-03T07:01:37.000Z",
+    "status": "enough_fuel",
+    "queueCars": null,
+    "detail": "Азс Уфимнефть сухумское шоссе - \nДТ- в наличии бегзина нет",
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": null
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "41": {
+    "updatedAt": "2026-09-02T10:58:09.000Z",
+    "status": "enough_fuel",
+    "queueCars": null,
+    "detail": null,
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 85
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "42": {
+    "updatedAt": "2026-09-02T10:58:16.000Z",
+    "status": "enough_fuel",
+    "queueCars": 0,
+    "detail": null,
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 85
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  },
+  "44": {
+    "updatedAt": "2026-09-02T10:58:22.000Z",
+    "status": "enough_fuel",
+    "queueCars": 0,
+    "detail": null,
+    "availableFuel": {
+      "92": {
+        "available": false,
+        "price": null
+      },
+      "95": {
+        "available": false,
+        "price": null
+      },
+      "100": {
+        "available": false,
+        "price": null
+      },
+      "DT": {
+        "available": true,
+        "price": 85
+      },
+      "DT_PLUS": {
+        "available": false,
+        "price": null
+      }
+    }
+  }
+}
