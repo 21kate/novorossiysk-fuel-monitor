@@ -17,27 +17,69 @@ STATE_FILE = "fuel_state.json"
 def send_telegram(text, strong=False):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
-    response = requests.post(
-        url,
-        json={
-            "chat_id": CHAT_ID,
-            "text": text,
-            "disable_notification": not strong,
-        },
-        timeout=30,
+    # Telegram разрешает максимум 4096 символов.
+    # Используем запас, чтобы гарантированно не получить ошибку.
+    max_length = 4000
+
+    messages = []
+
+    while len(text) > max_length:
+        split_at = text.rfind("\n", 0, max_length)
+
+        if split_at == -1:
+            split_at = max_length
+
+        messages.append(text[:split_at])
+        text = text[split_at:].lstrip()
+
+    if text:
+        messages.append(text)
+
+    print(
+        f"Telegram: prepared {len(messages)} message(s)"
     )
 
-    print("Telegram HTTP status:", response.status_code)
-    print("Telegram response:", response.text)
+    for index, message in enumerate(messages, start=1):
 
-    response.raise_for_status()
+        print(
+            f"Sending Telegram message "
+            f"{index}/{len(messages)}, "
+            f"length: {len(message)}"
+        )
 
-    data = response.json()
+        response = requests.post(
+            url,
+            json={
+                "chat_id": CHAT_ID,
+                "text": message,
+                "disable_notification": not strong,
+            },
+            timeout=30,
+        )
 
-    if not data.get("ok"):
-        raise RuntimeError(f"Telegram API error: {data}")
+        print(
+            "Telegram HTTP status:",
+            response.status_code
+        )
 
-    print("Telegram message sent successfully")
+        print(
+            "Telegram response:",
+            response.text
+        )
+
+        response.raise_for_status()
+
+        data = response.json()
+
+        if not data.get("ok"):
+            raise RuntimeError(
+                f"Telegram API error: {data}"
+            )
+
+        print(
+            f"Telegram message {index} "
+            f"sent successfully"
+        )
 
 
 def get_stations():
