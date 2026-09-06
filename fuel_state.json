@@ -84,18 +84,18 @@
     }
   },
   "38": {
-    "updatedAt": "2026-09-05T14:41:58.000Z",
+    "updatedAt": "2026-09-06T05:19:02.000Z",
     "status": "enough_fuel",
-    "queueCars": 32,
-    "detail": "На  18:00\nНатухаевская, ул. Шоссейная автодорога\nТопливо:\nАи-95 -   нет\nАт-92 -65. 55\nДт- по цене 76.70\nНаличный/безналичный расчёт. \nОчередь -32 машин. Работает до 22.00",
+    "queueCars": 110,
+    "detail": "На 8:12\nНаличный/безналичный расчёт. \nБензин лимит 30л, ДТ без лимита",
     "availableFuel": {
       "92": {
         "available": true,
         "price": 65.55
       },
       "95": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 72.1
       },
       "100": {
         "available": false,
@@ -140,10 +140,10 @@
     }
   },
   "20": {
-    "updatedAt": "2026-09-05T09:53:56.000Z",
+    "updatedAt": "2026-09-06T05:21:36.000Z",
     "status": "enough_fuel",
     "queueCars": 0,
-    "detail": "на 12:51",
+    "detail": null,
     "availableFuel": {
       "92": {
         "available": false,
@@ -252,10 +252,10 @@
     }
   },
   "4": {
-    "updatedAt": "2026-09-05T09:53:10.000Z",
+    "updatedAt": "2026-09-06T05:20:55.000Z",
     "status": "enough_fuel",
     "queueCars": 100,
-    "detail": "12:51",
+    "detail": null,
     "availableFuel": {
       "92": {
         "available": false,
@@ -271,7 +271,7 @@
       },
       "DT": {
         "available": true,
-        "price": null
+        "price": 80
       },
       "DT_PLUS": {
         "available": false,
@@ -308,17 +308,17 @@
     }
   },
   "6": {
-    "updatedAt": "2026-09-06T04:07:28.000Z",
+    "updatedAt": "2026-09-06T05:24:14.000Z",
     "status": "enough_fuel",
     "queueCars": 0,
-    "detail": "На 06:27\n95 хватит до 9 часов. Когда будет поставка - не известно",
+    "detail": "На 8:19, очереди нет",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "100": {
@@ -326,8 +326,8 @@
         "price": null
       },
       "DT": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 78.36
       },
       "DT_PLUS": {
         "available": false,
@@ -364,21 +364,21 @@
     }
   },
   "8": {
-    "updatedAt": "2026-09-05T08:59:05.000Z",
+    "updatedAt": "2026-09-06T05:13:30.000Z",
     "status": "enough_fuel",
     "queueCars": null,
-    "detail": "на 12:00\nС 12-00 начинают отпускать топливо, в наличии ДТ, 92,95\nОбщая очередь \n1 и 3 колонка инвалиды",
+    "detail": "На 8:11\nС 12-00 начинают отпускать топливо.\nОчередь с волгоградской\n1 и 3 колонка инвалиды",
     "availableFuel": {
       "92": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "95": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "100": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "DT": {
@@ -448,10 +448,10 @@
     }
   },
   "35": {
-    "updatedAt": "2026-09-05T21:19:02.000Z",
+    "updatedAt": "2026-09-06T05:20:01.000Z",
     "status": "enough_fuel",
-    "queueCars": null,
-    "detail": "Очереди нет\nКазачество нет\nЛимит бензина 40л. Лимит ДТ 60л. Отпуск топлива всем.",
+    "queueCars": 70,
+    "detail": "На 8:00\nКазачество 2 чел.\nЛимит бензина 40л. Лимит ДТ 60л. Отпуск топлива всем.",
     "availableFuel": {
       "92": {
         "available": false,
@@ -476,10 +476,10 @@
     }
   },
   "46": {
-    "updatedAt": "2026-09-06T04:13:19.000Z",
+    "updatedAt": "2026-09-06T05:09:28.000Z",
     "status": "enough_fuel",
     "queueCars": 70,
-    "detail": "На 6:27\n1 волонтер\n1 НД\nОчередь 70+ машин \nДля инвалидов и спец.транспорта 6 колонка",
+    "detail": "На 8:09\n1 волонтер\n1 НД\nОчередь 70+ машин \nДля инвалидов и спец.транспорта 6 колонка",
     "availableFuel": {
       "92": {
         "available": false,
@@ -532,10 +532,10 @@
     }
   },
   "3": {
-    "updatedAt": "2026-09-06T04:10:55.000Z",
+    "updatedAt": "2026-09-06T05:23:30.000Z",
     "status": "enough_fuel",
-    "queueCars": 80,
-    "detail": "на 7:00\nТопливо отпускают всем, расчет любой",
+    "queueCars": 25,
+    "detail": "на 8:18. В наличии 82 на 70 машин, в очереди порядка 25 машин, далее по топливным картам",
     "availableFuel": {
       "92": {
         "available": true,
@@ -840,10 +840,10 @@
     }
   },
   "23": {
-    "updatedAt": "2026-09-05T09:53:34.000Z",
+    "updatedAt": "2026-09-06T05:21:20.000Z",
     "status": "enough_fuel",
     "queueCars": null,
-    "detail": "на 12:51",
+    "detail": null,
     "availableFuel": {
       "92": {
         "available": false,
