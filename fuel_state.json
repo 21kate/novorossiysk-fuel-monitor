@@ -1,17 +1,17 @@
 {
   "26": {
-    "updatedAt": "2026-09-04T09:57:54.000Z",
+    "updatedAt": "2026-09-06T04:47:07.000Z",
     "status": "enough_fuel",
-    "queueCars": 40,
-    "detail": "ДТ, 92, 95 хватит до 23:00",
+    "queueCars": 30,
+    "detail": null,
     "availableFuel": {
       "92": {
         "available": true,
-        "price": null
+        "price": 81.5
       },
       "95": {
         "available": true,
-        "price": null
+        "price": 87
       },
       "100": {
         "available": false,
@@ -19,7 +19,7 @@
       },
       "DT": {
         "available": true,
-        "price": null
+        "price": 69
       },
       "DT_PLUS": {
         "available": false,
@@ -28,13 +28,13 @@
     }
   },
   "12": {
-    "updatedAt": "2026-09-04T08:59:01.000Z",
-    "status": "closed",
+    "updatedAt": "2026-09-06T04:16:20.000Z",
+    "status": "enough_fuel",
     "queueCars": 0,
-    "detail": "АИ 95 - нет в наличии\nАИ 92 - нет в наличии \nДТ - нет в наличии\n\nОчередь: нет",
+    "detail": "Очереди практически нет",
     "availableFuel": {
       "92": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "95": {
@@ -46,7 +46,7 @@
         "price": null
       },
       "DT": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "DT_PLUS": {
@@ -280,10 +280,10 @@
     }
   },
   "5": {
-    "updatedAt": "2026-09-04T07:48:31.000Z",
+    "updatedAt": "2026-09-06T04:14:58.000Z",
     "status": "enough_fuel",
-    "queueCars": 60,
-    "detail": "АЗС Лукойл, ул. Куникова, д 47а/1\nАИ 95 - нет\nАИ 92 - нет\nАИ 100 - нет\nДТ - 78.35 цена за литр \n60+машин очередь \nДля инвалидов и спец.технихи 2 колонки 1,2",
+    "queueCars": 0,
+    "detail": "Бензина нет и не будет сегодня. Только ДТ.\nДля инвалидов и спец. технихи 2 колонки 1,2",
     "availableFuel": {
       "92": {
         "available": false,
@@ -308,13 +308,13 @@
     }
   },
   "6": {
-    "updatedAt": "2026-09-05T06:01:55.000Z",
+    "updatedAt": "2026-09-06T04:07:28.000Z",
     "status": "enough_fuel",
-    "queueCars": null,
-    "detail": "На 08:00\nАЗС ЛУКОЙЛ,  Суворовская \nТопливо:\nАИ-95-на машин 40\nАи 92 на машин 20\nДТ в наличии \n2 волонтёра \n1 колонка для инвалидов и спецтранспорта. \nОчередь порядка 80+ машин",
+    "queueCars": 0,
+    "detail": "На 06:27\n95 хватит до 9 часов. Когда будет поставка - не известно",
     "availableFuel": {
       "92": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "95": {
@@ -476,22 +476,22 @@
     }
   },
   "46": {
-    "updatedAt": "2026-09-05T06:05:47.000Z",
+    "updatedAt": "2026-09-06T04:13:19.000Z",
     "status": "enough_fuel",
-    "queueCars": 60,
-    "detail": "На 8:00\n\nАЗС Лукойл, тер. Цемдолина, ул. Ленина, 171\nАИ 95 - 74,71\nАИ 92 - нет\nАИ 100 - 99,40\nДТ - 78,36\n\n1 волонтер\n1 НД\nОчередь 60+ машин \nДля инвалидов и спец.транспорта 6 колонка\n0",
+    "queueCars": 70,
+    "detail": "На 6:27\n1 волонтер\n1 НД\nОчередь 70+ машин \nДля инвалидов и спец.транспорта 6 колонка",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 74.71
       },
       "100": {
-        "available": true,
-        "price": 99.4
+        "available": false,
+        "price": null
       },
       "DT": {
         "available": true,
@@ -532,10 +532,10 @@
     }
   },
   "3": {
-    "updatedAt": "2026-09-05T14:43:29.000Z",
+    "updatedAt": "2026-09-06T04:10:55.000Z",
     "status": "enough_fuel",
-    "queueCars": 100,
-    "detail": "на 18:00\n92-есть, 95-есть, дт -есть, очередь 100+",
+    "queueCars": 80,
+    "detail": "на 7:00\nТопливо отпускают всем, расчет любой",
     "availableFuel": {
       "92": {
         "available": true,
