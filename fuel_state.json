@@ -280,10 +280,10 @@
     }
   },
   "5": {
-    "updatedAt": "2026-09-07T08:35:45.000Z",
-    "status": "enough_fuel",
+    "updatedAt": "2026-09-08T04:47:09.000Z",
+    "status": "closed",
     "queueCars": 0,
-    "detail": "Лукойл Куникова 47А\nВ наличии ДТ 78.35, отпускают всем \nОчереди нет",
+    "detail": "На 7:00\nтоплива нет",
     "availableFuel": {
       "92": {
         "available": false,
@@ -298,8 +298,8 @@
         "price": null
       },
       "DT": {
-        "available": true,
-        "price": 78.35
+        "available": false,
+        "price": null
       },
       "DT_PLUS": {
         "available": false,
@@ -308,17 +308,17 @@
     }
   },
   "6": {
-    "updatedAt": "2026-09-07T08:32:26.000Z",
+    "updatedAt": "2026-09-08T03:57:06.000Z",
     "status": "enough_fuel",
-    "queueCars": 0,
-    "detail": "АЗС ЛУКОЙЛ Суворовская \n\n100- нет\n95-нет\n92-нет\nДТ-78.36",
+    "queueCars": null,
+    "detail": "На 7:00\n100- нет\n95-есть\n92-есть\nДТ-78.36",
     "availableFuel": {
       "92": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "95": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "100": {
@@ -364,10 +364,10 @@
     }
   },
   "8": {
-    "updatedAt": "2026-09-07T08:32:31.000Z",
+    "updatedAt": "2026-09-08T04:49:28.000Z",
     "status": "enough_fuel",
     "queueCars": null,
-    "detail": "ДТ в наличи,\nАИ нет",
+    "detail": "На 07:46\nАИ 95 - нет \nАИ 92 - нет \nДТ - 78,36\nОтпуск топлива с 12:00.",
     "availableFuel": {
       "92": {
         "available": false,
@@ -448,10 +448,10 @@
     }
   },
   "35": {
-    "updatedAt": "2026-09-07T08:31:08.000Z",
+    "updatedAt": "2026-09-08T05:02:40.000Z",
     "status": "enough_fuel",
-    "queueCars": 70,
-    "detail": "АЗС Лукойл ст.Раевская\n\nТопливо: \nАи-92 нет в наличии\nАи-95 нет в наличии\n АИ -100 нет в наличии\nДТ-  в наличии     78,36              \nОчередь около 5 \n Лимит ДТ 60л.  Отпуск топлива всем.",
+    "queueCars": 40,
+    "detail": "На 08.00\nТопливо: \nАи-92 нет в наличии\nАи-95 нет в наличии\nАИ -100 нет в наличии\nДТ-  в наличии     78,36              \nЛимит ДТ 60л.  Отпуск топлива всем.",
     "availableFuel": {
       "92": {
         "available": false,
@@ -476,18 +476,18 @@
     }
   },
   "46": {
-    "updatedAt": "2026-09-07T08:34:25.000Z",
+    "updatedAt": "2026-09-08T03:45:12.000Z",
     "status": "enough_fuel",
-    "queueCars": 70,
-    "detail": "ДТ Евро  по цене 78,36 — есть.",
+    "queueCars": 80,
+    "detail": "на 6:30\n100- нет\n95-75.71\n92-нет\nДТ-78.36\nОтпуск топлива всем",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 75.71
       },
       "100": {
         "available": false,
@@ -560,10 +560,10 @@
     }
   },
   "17": {
-    "updatedAt": "2026-09-07T08:35:48.000Z",
+    "updatedAt": "2026-09-08T04:48:19.000Z",
     "status": "enough_fuel",
-    "queueCars": 40,
-    "detail": "Топливо отпускается только по топливным картам",
+    "queueCars": 20,
+    "detail": "На 7:00\n92-есть, \n95-есть,\n дт- есть. \nВсе только по топливным картам",
     "availableFuel": {
       "92": {
         "available": true,
@@ -812,10 +812,10 @@
     }
   },
   "22": {
-    "updatedAt": "2026-09-07T08:30:59.000Z",
-    "status": "closed",
-    "queueCars": 0,
-    "detail": "ДТ, АИ нет в наличи",
+    "updatedAt": "2026-09-08T04:51:28.000Z",
+    "status": "enough_fuel",
+    "queueCars": null,
+    "detail": "На 7:00\nДТ есть\nАИ нет в наличии",
     "availableFuel": {
       "92": {
         "available": false,
@@ -830,7 +830,7 @@
         "price": null
       },
       "DT": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "DT_PLUS": {
