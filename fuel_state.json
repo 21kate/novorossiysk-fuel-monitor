@@ -308,13 +308,13 @@
     }
   },
   "6": {
-    "updatedAt": "2026-09-08T03:57:06.000Z",
+    "updatedAt": "2026-09-08T07:16:11.000Z",
     "status": "enough_fuel",
     "queueCars": null,
-    "detail": "На 7:00\n100- нет\n95-есть\n92-есть\nДТ-78.36",
+    "detail": null,
     "availableFuel": {
       "92": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "95": {
@@ -644,10 +644,10 @@
     }
   },
   "36": {
-    "updatedAt": "2026-09-07T17:03:18.000Z",
+    "updatedAt": "2026-09-08T07:15:44.000Z",
     "status": "enough_fuel",
     "queueCars": 0,
-    "detail": "На 20:00\nТопливо:\nАи-92 по цене 66,45 только топливные карты \nАи-95 по цене 72,20 только топливные карты \nДТ по цене 77,20 \nВ общем доступе \n \nЗаправка только по\nТопливным картам\nЛимит 30 литров.",
+    "detail": "На 9.20\nАЗС Роснефть Ж/д петля. \nТопливо:\nАи-92 по цене 66,45 только топливные карты \nАи-95 по цене 72,20 только топливные карты \n\nДТ по цене 77,20 \nВ общем доступе \n \nЗаправка только по\nТопливным картам\nЛимит 30 литров.\n\n Очередей нет \n\nПоставка бензина ожидается вечером",
     "availableFuel": {
       "92": {
         "available": true,
@@ -672,13 +672,13 @@
     }
   },
   "40": {
-    "updatedAt": "2026-09-07T16:49:39.000Z",
+    "updatedAt": "2026-09-08T07:15:05.000Z",
     "status": "enough_fuel",
-    "queueCars": 200,
-    "detail": "На 19:20\nМысхакское шоссе 53 Б Роснефть\n92,95 ДТ есть, все для всех,",
+    "queueCars": 70,
+    "detail": "На 10.00\nМысхакское шоссе 53 Б Роснефть\n\nДТ - 77,20   для всех\n92 - 66,05 для всех\n95- 72,20 только по топливным картам \nОчередь около  70 машин",
     "availableFuel": {
       "92": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "95": {
@@ -686,7 +686,7 @@
         "price": null
       },
       "100": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "DT": {
@@ -840,17 +840,17 @@
     }
   },
   "23": {
-    "updatedAt": "2026-09-07T08:30:30.000Z",
+    "updatedAt": "2026-09-08T07:16:50.000Z",
     "status": "enough_fuel",
     "queueCars": null,
-    "detail": "ДТ в наличи,\nАИ нет",
+    "detail": null,
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "100": {
