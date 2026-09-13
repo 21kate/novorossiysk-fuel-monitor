@@ -1,9 +1,9 @@
 {
   "26": {
-    "updatedAt": "2026-09-08T13:09:13.000Z",
+    "updatedAt": "2026-09-13T04:01:22.000Z",
     "status": "enough_fuel",
-    "queueCars": null,
-    "detail": "Русойл, 92-есть, 95-есть, дт -есть, очередь 30 машин",
+    "queueCars": 20,
+    "detail": "На 7:00\n92-есть, \n95-есть, \nдт-есть,",
     "availableFuel": {
       "92": {
         "available": true,
@@ -28,14 +28,14 @@
     }
   },
   "12": {
-    "updatedAt": "2026-09-07T08:34:27.000Z",
+    "updatedAt": "2026-09-13T03:58:38.000Z",
     "status": "enough_fuel",
-    "queueCars": 0,
-    "detail": "АИ 92 и ДТ в наличии",
+    "queueCars": 10,
+    "detail": "92-107, \n95-нет, \nдт-есть.",
     "availableFuel": {
       "92": {
         "available": true,
-        "price": null
+        "price": 107
       },
       "95": {
         "available": false,
@@ -140,10 +140,10 @@
     }
   },
   "20": {
-    "updatedAt": "2026-09-12T15:17:15.000Z",
+    "updatedAt": "2026-09-13T03:39:02.000Z",
     "status": "enough_fuel",
-    "queueCars": 0,
-    "detail": "На 18:00\nАИ-92 - нет\nАИ-95 - нет\nДТ - в наличии",
+    "queueCars": null,
+    "detail": "На 6:00\nАИ-92 - нет\nАИ-95 - нет\nДТ - в наличии",
     "availableFuel": {
       "92": {
         "available": false,
@@ -252,17 +252,17 @@
     }
   },
   "4": {
-    "updatedAt": "2026-09-12T15:16:41.000Z",
+    "updatedAt": "2026-09-13T03:37:30.000Z",
     "status": "enough_fuel",
-    "queueCars": 0,
-    "detail": "На 18:00\nАИ-92 - нет\nАИ-95 - нет\nДТ - в наличии",
+    "queueCars": null,
+    "detail": "На 06:00\nАИ-92 \nАИ-95 \nДТ",
     "availableFuel": {
       "92": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "95": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "100": {
@@ -280,10 +280,10 @@
     }
   },
   "5": {
-    "updatedAt": "2026-09-10T13:39:54.000Z",
+    "updatedAt": "2026-09-13T05:16:14.000Z",
     "status": "enough_fuel",
     "queueCars": null,
-    "detail": "Куникова Лукойл\n\nБензина нет\n\nТолько ДТ 78,35.",
+    "detail": "8:00\nТопливо: \nАи-92 нет в наличии\nАи-95 нет в наличии\nАИ-100 нет в наличии\nДТ-  в наличии     78,35              \nБензина не будет целый день",
     "availableFuel": {
       "92": {
         "available": false,
@@ -308,26 +308,26 @@
     }
   },
   "6": {
-    "updatedAt": "2026-09-10T13:40:10.000Z",
+    "updatedAt": "2026-09-13T05:12:45.000Z",
     "status": "enough_fuel",
-    "queueCars": 50,
-    "detail": "Суворовская, 54. \nЕсть только ДТ.",
+    "queueCars": 40,
+    "detail": "на 08:00 \nСуворовскаЯ 54\nТопливо: \nАИ - 92 - нет\nАИ - 95 - 74.71\nАИ - 100 - нет\nДТ - нет\n для всех. Лимит 40л. Инвалиды 1 колонка в порядке очереди.",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 74.71
       },
       "100": {
         "available": false,
         "price": null
       },
       "DT": {
-        "available": true,
-        "price": 78.36
+        "available": false,
+        "price": null
       },
       "DT_PLUS": {
         "available": false,
@@ -364,18 +364,18 @@
     }
   },
   "8": {
-    "updatedAt": "2026-09-12T13:20:49.000Z",
+    "updatedAt": "2026-09-13T03:45:23.000Z",
     "status": "enough_fuel",
-    "queueCars": null,
-    "detail": "По состоянию на 16:00 \n\nТопливо: \nАИ - 92 - нет \nАИ - 95 - нет \n\nДТ - 78.36 для всех. Ограничение 60 литров \nТолько топливные карты",
+    "queueCars": 30,
+    "detail": "на 6:00 \nТопливо: \n92- нет\n95 - нет\nДТ - 78.36",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": true,
-        "price": 74.71
+        "available": false,
+        "price": null
       },
       "100": {
         "available": false,
@@ -448,22 +448,22 @@
     }
   },
   "35": {
-    "updatedAt": "2026-09-12T13:23:06.000Z",
+    "updatedAt": "2026-09-13T04:40:26.000Z",
     "status": "enough_fuel",
-    "queueCars": 0,
-    "detail": "На 16:00\nТопливо: \nАи-92 нет в наличии\nАи-95 нет в наличии           \nАИ-100  нет в наличии \nДТ-  в наличии     78,36              \nОчереди нет \nКазачество нет\nЛимит бензина 40л.         \nЛимит ДТ 60л.  \nОтпуск топлива всем.",
+    "queueCars": 40,
+    "detail": "На 08:00\nАЗС Лукойл ст.Раевская\nТопливо: \nАи-92 нет в наличии\nАи-95 в наличии 74,71              А\nИ-100  в наличии 99,40\nДТ-  в наличии     78,36              \nЛимит бензина 40л.         \nЛимит ДТ 60л.  \nОтпуск топлива всем",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 74.71
       },
       "100": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 99.4
       },
       "DT": {
         "available": true,
@@ -476,22 +476,22 @@
     }
   },
   "46": {
-    "updatedAt": "2026-09-09T11:16:39.000Z",
+    "updatedAt": "2026-09-13T05:13:56.000Z",
     "status": "enough_fuel",
     "queueCars": 50,
-    "detail": "На 14:00 \nРоснефть Ленина 143\n92- 66,05\n95- 72,20\nДТ- 77,20\nОчередь порядка 50 машин, бензина хватит до вечера",
+    "detail": "на 8:00 \nТопливо: \nАИ - 92 - нет\nАИ - 95 - 74.71\nАИ - 100 - нет\nДТ - 78.36 \nесть топливо для всех.\n Инвалиды 6 колонка в порядке очереди.",
     "availableFuel": {
       "92": {
-        "available": true,
-        "price": 67.64
+        "available": false,
+        "price": null
       },
       "95": {
         "available": true,
         "price": 74.71
       },
       "100": {
-        "available": true,
-        "price": 99.4
+        "available": false,
+        "price": null
       },
       "DT": {
         "available": true,
@@ -532,10 +532,10 @@
     }
   },
   "3": {
-    "updatedAt": "2026-09-10T17:24:08.000Z",
+    "updatedAt": "2026-09-13T03:57:33.000Z",
     "status": "enough_fuel",
-    "queueCars": 50,
-    "detail": "На 20:00\nТопливо:\nАи-92  на 311 машин\nАи-95 только для спец.транспорта\nДТ много.\nОчередь более 40 машин\nЛимит 30 лит",
+    "queueCars": 0,
+    "detail": "На 7:00\nТопливо:\nАи-92  нет\nАи-95 нет\nДТ - в наличии",
     "availableFuel": {
       "92": {
         "available": true,
@@ -672,17 +672,17 @@
     }
   },
   "40": {
-    "updatedAt": "2026-09-12T12:41:47.000Z",
+    "updatedAt": "2026-09-13T05:15:12.000Z",
     "status": "enough_fuel",
-    "queueCars": null,
-    "detail": "Топливо: \nАИ - 92 - нет \nАИ - 95 - только ТК\nДТ - 77.20 для всех. Без ограничений\n1 колонка только спец транспорт\n2 волонтёра Росгвардия на месте",
+    "queueCars": 40,
+    "detail": "На 8.00\nАЗС Роснефть мысхакское шоссе 53 Б\nАИ 92-0\nАИ 95-0\nДТ- в наличии\nБензин только для спецтранспорта",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "100": {
@@ -840,17 +840,17 @@
     }
   },
   "23": {
-    "updatedAt": "2026-09-12T15:17:01.000Z",
+    "updatedAt": "2026-09-13T03:38:39.000Z",
     "status": "enough_fuel",
     "queueCars": null,
-    "detail": "На 18:00\nАИ-92 - нет\nАИ-95 - нет\nДТ - в наличии",
+    "detail": "На 6:00\nАИ-92 нет \nАИ-95 \nДТ -",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "100": {
