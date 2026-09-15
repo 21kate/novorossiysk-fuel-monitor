@@ -84,10 +84,10 @@
     }
   },
   "38": {
-    "updatedAt": "2026-09-15T12:29:56.000Z",
+    "updatedAt": "2026-09-15T15:09:40.000Z",
     "status": "enough_fuel",
     "queueCars": 50,
-    "detail": "Лимит бензин-30 литров. ДТ безлимит.\nОчередь 50 машин\nТех перерыв до 14:00",
+    "detail": "На 18:01\nЛимит бензин-30 литров. ДТ безлимит.\nОчередь 50 машин\nАЗС работает до 22:00.\nНаличный /безналичный расчет",
     "availableFuel": {
       "92": {
         "available": true,
@@ -420,10 +420,10 @@
     }
   },
   "31": {
-    "updatedAt": "2026-09-15T09:57:28.000Z",
+    "updatedAt": "2026-09-15T15:12:12.000Z",
     "status": "closed",
     "queueCars": 0,
-    "detail": "На 12:51\n\nЗаправка закрыта. \nОбслуживает только спец.транспорт. \nПО ТОПЛИВНЫМ КАРТАМ НЕ ЗАПРАВЛЯЮТ !!!",
+    "detail": "На 18:03\n\nЗаправка закрыта. \nОбслуживает только спец.транспорт. \nПО ТОПЛИВНЫМ КАРТАМ НЕ ЗАПРАВЛЯЮТ !!!",
     "availableFuel": {
       "92": {
         "available": false,
@@ -532,17 +532,17 @@
     }
   },
   "3": {
-    "updatedAt": "2026-09-13T07:14:18.000Z",
-    "status": "closed",
-    "queueCars": 0,
-    "detail": "На 7:00\nТопливо:\nАи-92  нет\nАи-95 нет\nДТ - в наличии",
+    "updatedAt": "2026-09-15T15:05:29.000Z",
+    "status": "enough_fuel",
+    "queueCars": 20,
+    "detail": "На 17:44\nТопливо:\nАи-92  будет через пол часа как сольется бензовоз\nАи-95 только для спецслужб\nДТ - в наличии для всех",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "100": {
@@ -550,7 +550,7 @@
         "price": null
       },
       "DT": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "DT_PLUS": {
@@ -560,10 +560,10 @@
     }
   },
   "17": {
-    "updatedAt": "2026-09-14T05:27:33.000Z",
+    "updatedAt": "2026-09-15T15:07:34.000Z",
     "status": "enough_fuel",
-    "queueCars": 20,
-    "detail": "На 6:00\n92-есть, \n95-есть,\n дт- есть. \nВсе только по топливным картам",
+    "queueCars": 30,
+    "detail": "На 17:44\n92 и 95 по топливным картам и для спец.служб\n дт- есть.",
     "availableFuel": {
       "92": {
         "available": true,
@@ -700,10 +700,10 @@
     }
   },
   "47": {
-    "updatedAt": "2026-09-15T12:49:50.000Z",
+    "updatedAt": "2026-09-15T15:11:27.000Z",
     "status": "enough_fuel",
-    "queueCars": 10,
-    "detail": null,
+    "queueCars": 0,
+    "detail": "На 18:03 Лимит:\nБензин легковые - 30л.\nДТ легковые - 60л.\nДТ грузовые - 200л",
     "availableFuel": {
       "92": {
         "available": false,
@@ -718,8 +718,8 @@
         "price": null
       },
       "DT": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 77.09
       },
       "DT_PLUS": {
         "available": true,
