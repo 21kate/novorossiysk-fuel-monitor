@@ -448,22 +448,22 @@
     }
   },
   "35": {
-    "updatedAt": "2026-09-15T10:09:21.000Z",
+    "updatedAt": "2026-09-16T04:44:24.000Z",
     "status": "enough_fuel",
-    "queueCars": 0,
-    "detail": "На 10:46\nДТ-  в наличии     78,36              \nКазачества 2 чел.\nЛимит бензина 40л.  \n Лимит ДТ 60л.\n  Отпуск топлива всем.",
+    "queueCars": 35,
+    "detail": "На 7:14            \nКазачества 2 чел.\nЛимит бензина 40л.  \n Лимит ДТ 60л.\n  Отпуск топлива всем.",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 74.71
       },
       "100": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 99.4
       },
       "DT": {
         "available": true,
