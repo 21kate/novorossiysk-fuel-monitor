@@ -364,10 +364,10 @@
     }
   },
   "8": {
-    "updatedAt": "2026-09-16T08:39:14.000Z",
+    "updatedAt": "2026-09-17T06:31:54.000Z",
     "status": "enough_fuel",
     "queueCars": 20,
-    "detail": ".",
+    "detail": "На 8:00\n\nЛукойл Дзержинского 211\n\nПродажа бензина с 12:00\nДТ - 78,36 для всех. Ограничение 60 литров",
     "availableFuel": {
       "92": {
         "available": false,
@@ -392,10 +392,10 @@
     }
   },
   "11": {
-    "updatedAt": "2026-09-16T09:32:26.000Z",
+    "updatedAt": "2026-09-17T06:31:10.000Z",
     "status": "enough_fuel",
     "queueCars": 0,
-    "detail": null,
+    "detail": "Отпуск топлива начнется в 12.00.",
     "availableFuel": {
       "92": {
         "available": false,
@@ -588,10 +588,10 @@
     }
   },
   "19": {
-    "updatedAt": "2026-09-16T07:10:34.000Z",
-    "status": "enough_fuel",
+    "updatedAt": "2026-09-17T06:33:07.000Z",
+    "status": "closed",
     "queueCars": null,
-    "detail": "92 и 95 подвезут к обеду",
+    "detail": null,
     "availableFuel": {
       "92": {
         "available": false,
@@ -610,8 +610,8 @@
         "price": null
       },
       "DT_PLUS": {
-        "available": true,
-        "price": 77.2
+        "available": false,
+        "price": null
       }
     }
   },
@@ -728,10 +728,10 @@
     }
   },
   "15": {
-    "updatedAt": "2026-09-16T09:25:08.000Z",
+    "updatedAt": "2026-09-17T06:34:08.000Z",
     "status": "enough_fuel",
     "queueCars": 15,
-    "detail": "В наличии только ДТ.",
+    "detail": "В наличии только ДТ",
     "availableFuel": {
       "92": {
         "available": false,
@@ -756,9 +756,9 @@
     }
   },
   "16": {
-    "updatedAt": "2026-09-16T09:28:32.000Z",
-    "status": "closed",
-    "queueCars": 30,
+    "updatedAt": "2026-09-17T06:35:49.000Z",
+    "status": "enough_fuel",
+    "queueCars": 0,
     "detail": null,
     "availableFuel": {
       "92": {
@@ -774,7 +774,7 @@
         "price": null
       },
       "DT": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "DT_PLUS": {
@@ -784,8 +784,8 @@
     }
   },
   "21": {
-    "updatedAt": "2026-09-16T09:24:41.000Z",
-    "status": "closed",
+    "updatedAt": "2026-09-17T06:33:59.000Z",
+    "status": "enough_fuel",
     "queueCars": null,
     "detail": ".",
     "availableFuel": {
@@ -802,7 +802,7 @@
         "price": null
       },
       "DT": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "DT_PLUS": {
