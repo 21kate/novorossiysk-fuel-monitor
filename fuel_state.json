@@ -84,10 +84,10 @@
     }
   },
   "38": {
-    "updatedAt": "2026-09-16T07:17:20.000Z",
+    "updatedAt": "2026-09-18T15:33:57.000Z",
     "status": "enough_fuel",
-    "queueCars": 6,
-    "detail": "На  08:00\n\nАЗС 'Газпром тер. \nНатухаевская, ул. Шоссейная автодорога\nТопливо:\nАи-95 - 72,10\n Аи-92 - 65,55\nДт- по цене 76.70\nНаличный/безналичный расчёт. \n\nЛимит бензин-30 литров. ДТ безлимит.\nОчередь 6 машин",
+    "queueCars": 55,
+    "detail": "На  18:00\nАЗС 'Газпром тер. \nНатухаевская, ул. Шоссейная автодорога\nТопливо:\nАи-95 -72. 10\n Аи-92 - 65,55\nДт- по цене 76.70\nНаличный/безналичный расчёт. \nЛимит бензин-30 литров. ДТ безлимит.\nОчередь 55 машин.",
     "availableFuel": {
       "92": {
         "available": true,
@@ -140,10 +140,10 @@
     }
   },
   "20": {
-    "updatedAt": "2026-09-16T08:39:07.000Z",
+    "updatedAt": "2026-09-18T15:36:02.000Z",
     "status": "enough_fuel",
     "queueCars": null,
-    "detail": "АИ-92 - нет\nАИ-95 - нет\nДТ - в наличии.",
+    "detail": "на 18:30\nТолько ДТ",
     "availableFuel": {
       "92": {
         "available": false,
@@ -252,17 +252,17 @@
     }
   },
   "4": {
-    "updatedAt": "2026-09-16T09:12:07.000Z",
+    "updatedAt": "2026-09-18T15:35:47.000Z",
     "status": "enough_fuel",
     "queueCars": 0,
-    "detail": null,
+    "detail": "на 18:30\nТолько ДТ",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "100": {
@@ -336,26 +336,26 @@
     }
   },
   "7": {
-    "updatedAt": "2026-09-13T10:01:28.000Z",
-    "status": "enough_fuel",
-    "queueCars": 60,
-    "detail": "на 13:00\nЛукойл Ленина, 2\nТопливо:\nАи-92  -нет в наличии;\nАи-95 по цене 74,71 - в наличии;\nДТ по цене 78,36 - в наличии.\nОчередь порядка 60 машин.\nЗаливают по 40 л.\nЗаправка откроется через час, идет слив.",
+    "updatedAt": "2026-09-18T16:15:58.000Z",
+    "status": "closed",
+    "queueCars": 0,
+    "detail": "на 18:56 бензина и ДТ нет. \nКогда привезут - не известно",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": true,
-        "price": 74.71
+        "available": false,
+        "price": null
       },
       "100": {
         "available": false,
         "price": null
       },
       "DT": {
-        "available": true,
-        "price": 78.36
+        "available": false,
+        "price": null
       },
       "DT_PLUS": {
         "available": false,
@@ -448,18 +448,18 @@
     }
   },
   "35": {
-    "updatedAt": "2026-09-18T05:02:21.000Z",
+    "updatedAt": "2026-09-18T15:34:39.000Z",
     "status": "enough_fuel",
-    "queueCars": 65,
-    "detail": "На 08:00\nАЗС Лукойл ст.Раевская\nТопливо: \nАи-92 нет в наличии \nАи-95 в наличии 74,71              \nАИ-100  нет в наличии \nДТ-  в наличии     78,36              \nЛимит бензина 40л.         \nЛимит ДТ 60л. \nОтпуск топлива всем.",
+    "queueCars": 0,
+    "detail": "На 18:00\nАЗС Лукойл ст.Раевская\nТопливо: \nАи-92 нет в наличии \nАи-95 нет в наличии\nАИ-100  нет в наличии \nДТ-  в наличии     78,36              \nОчереди нет\nЛимит бензина 40л.         \nЛимит ДТ 60л.  \nОтпуск топлива всем",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": true,
-        "price": 74.71
+        "available": false,
+        "price": null
       },
       "100": {
         "available": false,
@@ -476,13 +476,13 @@
     }
   },
   "46": {
-    "updatedAt": "2026-09-14T05:26:42.000Z",
+    "updatedAt": "2026-09-18T16:14:51.000Z",
     "status": "enough_fuel",
-    "queueCars": 20,
-    "detail": "на 6:00\n92-есть, 95-нет, дт-есть. Очередь -20 машин.",
+    "queueCars": 0,
+    "detail": "на 18:45 бензина нет ,только для спец.служб.\nДТ для всех.\nБензин привезут ориентировочно к 6:00 утра",
     "availableFuel": {
       "92": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "95": {
@@ -504,10 +504,10 @@
     }
   },
   "13": {
-    "updatedAt": "2026-09-16T09:18:09.000Z",
+    "updatedAt": "2026-09-18T15:35:40.000Z",
     "status": "enough_fuel",
     "queueCars": 0,
-    "detail": null,
+    "detail": "на 18:30\nТолько ДТ",
     "availableFuel": {
       "92": {
         "available": false,
@@ -840,17 +840,17 @@
     }
   },
   "23": {
-    "updatedAt": "2026-09-16T09:12:11.000Z",
+    "updatedAt": "2026-09-18T15:35:50.000Z",
     "status": "enough_fuel",
     "queueCars": null,
-    "detail": ".",
+    "detail": "на 18:30\nТолько ДТ",
     "availableFuel": {
       "92": {
         "available": false,
         "price": null
       },
       "95": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "100": {
