@@ -448,26 +448,26 @@
     }
   },
   "35": {
-    "updatedAt": "2026-09-27T11:05:20.000Z",
-    "status": "closed",
-    "queueCars": 0,
-    "detail": "На 13.00\nАЗС Лукойл ст.Раевская\nТопливо: \nАи-92 нет в наличии \nАи-95 нет в наличии     \n АИ-100  нет в наличии\nДТ- нет в наличии  \nОчереди нет\nКазачество нет\nЛимит бензина 40л.         Лимит ДТ 60л.  Отпуск топлива всем.",
+    "updatedAt": "2026-09-28T04:36:52.000Z",
+    "status": "enough_fuel",
+    "queueCars": 80,
+    "detail": "На 07:30\nАЗС Лукойл ст.Раевская\nТопливо: \nАи-92 в наличии 67,88\nАи-95 в наличии 74,71              \nАИ-100  в наличии 99,40\nДТ-  в наличии     78,36              \nЛимит бензина 40л.         \nЛимит ДТ 60л.  \nОтпуск топлива всем.",
     "availableFuel": {
       "92": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 67.88
       },
       "95": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 74.71
       },
       "100": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 99.4
       },
       "DT": {
-        "available": false,
-        "price": null
+        "available": true,
+        "price": 78.36
       },
       "DT_PLUS": {
         "available": false,
