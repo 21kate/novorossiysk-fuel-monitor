@@ -28,10 +28,10 @@
     }
   },
   "12": {
-    "updatedAt": "2026-10-01T09:05:10.000Z",
+    "updatedAt": "2026-10-04T05:09:55.000Z",
     "status": "enough_fuel",
-    "queueCars": 0,
-    "detail": null,
+    "queueCars": 10,
+    "detail": "На 8:05\nКристина ,  Шиллеровская\n 92-есть, 95-нет, дт-есть\nОчередь 10 машин",
     "availableFuel": {
       "92": {
         "available": true,
@@ -336,10 +336,10 @@
     }
   },
   "7": {
-    "updatedAt": "2026-09-29T09:11:43.000Z",
+    "updatedAt": "2026-10-04T05:11:31.000Z",
     "status": "enough_fuel",
-    "queueCars": 30,
-    "detail": "Только ДТ",
+    "queueCars": 0,
+    "detail": "На 8:00\nЛукойл, Ленина 2,\nБензин с 12.00, дт-78,36, очереди нет",
     "availableFuel": {
       "92": {
         "available": false,
@@ -448,18 +448,18 @@
     }
   },
   "35": {
-    "updatedAt": "2026-10-03T14:27:05.000Z",
+    "updatedAt": "2026-10-04T05:06:12.000Z",
     "status": "enough_fuel",
-    "queueCars": 0,
-    "detail": "На 17:00\nАЗС Лукойл ст.Раевская\nТопливо: \nАи-92 в наличии по топливным картам - 67,88\nАи-95 нет в наличии\nАИ-100  в наличии по топливным картам-99\nДТ-  в наличии 78,36              \nОчереди нет.\nЛимит бензина 40л.       \n Лимит ДТ 60л.",
+    "queueCars": 25,
+    "detail": "На 8.00\nАЗС Лукойл ст.Раевская\nТопливо: \nАи - 92 нет в наличии\nАи - 95 - в наличии 74,98\n АИ - 100  нет \nДТ-  в наличии 78,36              \nОчереди 25.\nЛимит бензина 40л.         \nЛимит ДТ 60л.",
     "availableFuel": {
       "92": {
-        "available": true,
-        "price": 67.88
-      },
-      "95": {
         "available": false,
         "price": null
+      },
+      "95": {
+        "available": true,
+        "price": 74.98
       },
       "100": {
         "available": false,
@@ -532,17 +532,17 @@
     }
   },
   "3": {
-    "updatedAt": "2026-09-29T09:10:44.000Z",
+    "updatedAt": "2026-10-04T05:07:39.000Z",
     "status": "enough_fuel",
-    "queueCars": 0,
-    "detail": null,
+    "queueCars": 50,
+    "detail": "На 8:02\nРоснефть, Ленина 143, 92-есть, 95-нет, дт-есть.\nочередь - 50 машин",
     "availableFuel": {
       "92": {
         "available": true,
         "price": null
       },
       "95": {
-        "available": true,
+        "available": false,
         "price": null
       },
       "100": {
@@ -644,17 +644,17 @@
     }
   },
   "36": {
-    "updatedAt": "2026-09-23T06:24:48.000Z",
-    "status": "closed",
-    "queueCars": null,
-    "detail": null,
+    "updatedAt": "2026-10-04T05:08:53.000Z",
+    "status": "enough_fuel",
+    "queueCars": 40,
+    "detail": "На 8:03\nРоснефть, жд петля, \n92-есть, 95-нет, дт-есть, очередь - 40 машин",
     "availableFuel": {
       "92": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "95": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "100": {
@@ -662,7 +662,7 @@
         "price": null
       },
       "DT": {
-        "available": false,
+        "available": true,
         "price": null
       },
       "DT_PLUS": {
